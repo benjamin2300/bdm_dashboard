@@ -1,18 +1,27 @@
 <template>
   <div class="home">
     
-    <HelloWorld  />
+    <ShowDataComponent  />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+// import { apiService } from "@/common/api.service.js";
+import ShowDataComponent from "@/components/ShowData.vue";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    ShowDataComponent
+  },
+  data() {
+    return {
+      employees: [],
+    }
+  },
+  methods: {
+    // getEmployees()
   }
 };
 </script>

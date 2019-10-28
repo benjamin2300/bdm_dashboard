@@ -16,7 +16,7 @@ class LogonSerializer(serializers.ModelSerializer):
 
 class EmployeeSerializer(serializers.ModelSerializer):
 
-  logoons = LogonSerializer(many=True, read_only=True)
+  logons = LogonSerializer(many=True, read_only=True)
   devices = DeviceSerializer(many=True, read_only=True)
   class Meta:
     model = Employee

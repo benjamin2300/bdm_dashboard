@@ -1,5 +1,5 @@
 <template>
-  <div class="HelloWorld">
+  <div class="show-data">
 
   </div>
   
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "ShowDataComponent",
   props: {
     msg: String
   }
