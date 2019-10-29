@@ -30,7 +30,8 @@ module.exports = {
             .https(false)
             .disableHostCheck(true)
             .headers({"Access-Control-Allow-Origin": ["\*"]})
-
+        
+        config.module.rules.delete('eslint');
     },
 
     // uncomment before executing 'npm run build' 
